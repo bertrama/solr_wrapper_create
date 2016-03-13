@@ -11,7 +11,7 @@ namespace :solr do
       task(name.to_sym) {}
       @solr_instance.create dir: directory, name: name
     else
-      raise "usage: solr:create <directory> <name>"
+      raise "usage: rake solr:create <directory> <name>"
     end
   end
 end
